@@ -18,7 +18,7 @@ const Skills = [
   "Gestão de Tempo",
   "Organização",
   "Colaboração",
-  "Fácilidade de Aprendizagem",
+  "Facilidade de Aprendizagem",
   "Autodidacta",
   "Autonomia",
 ];

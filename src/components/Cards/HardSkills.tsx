@@ -25,7 +25,7 @@ const HardSkills: React.FC<GenericCardPropsF> = ({ setOpenGenericCard }) => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [setOpenGenericCard]);
+  }, []);
   return (
     <>
       <header>

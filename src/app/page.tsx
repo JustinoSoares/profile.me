@@ -243,7 +243,7 @@ export default function Profile() {
                 {
                   value: "+10",
                   label: "Tecnologias",
-                  desc: "Tecnologias que domino na prática — desde o front ao back, passando por ferramentas de deploy, banco de dados e implementações de IA em projectos.",
+                  desc: "Tecnologias que domino na prática — desde o front ao back, passando por ferramentas de deploy, banco de dados e implementações de IA em projetos.",
                 },
                 {
                   value: "+2",
@@ -343,16 +343,20 @@ export default function Profile() {
                   desc: "Ferramenta de gerenciamento de projetos que me permite organizar, planejar e acompanhar o progresso dos projetos.",
                 },
                 {
-                  icons: [{ src: "/icons/tailwind.svg", w: 40 }],
-                  title: "Tailwind CSS",
-                  desc: "Framework de CSS utilitário que me permite criar interfaces responsivas e personalizadas de forma rápida e eficiente.",
+                  icons: [
+                    { src: "/icons/java.svg", w: 40 },
+                    { src: "/icons/spring.svg", w: 40 },
+                  ],
+                  title: "Java & Spring Boot",
+                  desc: "Linguagem e framework que utilizo para desenvolver aplicações backend robustas, escaláveis e seguras, com uma arquitetura bem estruturada.",
                 },
                 {
                   icons: [
                     { src: "/icons/next.svg", w: 40 },
                     { src: "/icons/react.svg", w: 40 },
+                    { src: "/icons/tailwind.svg", w: 40 },
                   ],
-                  title: "Next.js & React",
+                  title: "Next.js & React & Tailwind CSS",
                   desc: "Frameworks de desenvolvimento web que me permitem criar aplicações modernas, rápidas e escaláveis.",
                 },
                 {

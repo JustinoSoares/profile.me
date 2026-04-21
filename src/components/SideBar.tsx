@@ -63,7 +63,7 @@ const SideBar: React.FC<{
           }}
           className="w-full transition-all hover:text-indigo-600 text-xl gap-1 justify-center font-medium flex items-end "
         >
-          Projectos
+          Projetos
         </Link>
       </div>
     </aside>
