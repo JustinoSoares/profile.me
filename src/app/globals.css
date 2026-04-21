@@ -1,0 +1,188 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Clash";
+  src: url("../fonts/ClashGrotesk-Variable.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("../fonts/NeueMontreal-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "mark";
+  src: url("../fonts/valorax.otf") format("opentype");
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --breakpoint-smaller: 23rem; /* 320px */
+  --breakpoint-small: 37.4375rem; /* 599px */
+  --breakpoint-ret: 37.5rem; /* 600px */
+  --breakpoint-pot: 56.25rem; /* 900px */
+  --breakpoint-det: 75rem; /* 1200px */
+  --breakpoint-lal: 112.5rem; /* 1800px */
+}
+
+body {
+  font-family: "Neue Montreal", sans-serif;
+  background-color: #ffffff;
+}
+
+.specialBack {
+  background-image: radial-gradient(#dadada 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+.valorax {
+  font-family: "mark", sans-serif !important;
+}
+
+.gradient-circle::before {
+  content: "";
+  position: absolute;
+  /* top: 50%; */
+  /* left: 50%; */
+  transform: translate(60%, 0%);
+
+  width: 800px; /* ajuste conforme necessário */
+  height: 800px; /* ajuste conforme necessário */
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(114, 104, 255, 0.37) 0%,
+    transparent 70%
+  );
+  z-index: 20;
+}
+
+.gradient-circle {
+  position: relative;
+  display: inline-block;
+}
+
+.hiddenBackdropAside {
+  display: none;
+  opacity: 0;
+  transition: all 0.3s 0.5s ease-in-out;
+}
+
+.visibleBackdropAside {
+  display: flex;
+  opacity: 1;
+  animation: visibleBackdrop 0.3s ease-in-out forwards;
+}
+
+.offBackdrop {
+  display: flex;
+  opacity: 1;
+  animation: offBackdrop 0.3s ease-in-out forwards;
+}
+
+.hiddenModel {
+  opacity: 0;
+  scale: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+
+.visibleModel {
+  opacity: 0;
+  scale: 0.3;
+
+  transition: all 0.3s ease-in-out;
+  animation: visibleModel 0.5s ease-in-out forwards;
+}
+
+.offModel {
+  opacity: 1;
+  scale: 0.8;
+  transition: all 0.3s ease-in-out;
+  animation: offModel 0.5s ease-in-out forwards;
+}
+
+@keyframes visibleBackdrop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes offBackdrop {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes visibleModel {
+  from {
+    opacity: 0.3;
+    scale: 0.8;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes offModel {
+  from {
+    opacity: 1;
+    scale: 1;
+  }
+  to {
+    opacity: 0.3;
+    scale: 0.3;
+  }
+  
+}
+
+button {
+  cursor: pointer;
+}
+
+
+.hideCard {
+  transform: translateX(-100%);
+}
+
+.onCard {
+  transform: translateX(-100%);
+  animation: onCard 0.5s forwards;
+}
+
+.offCard {
+  transform: translateX(0);
+  animation: offCard 0.5s forwards;
+}
+
+@keyframes onCard {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes offCard {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
