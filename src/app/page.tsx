@@ -581,8 +581,8 @@ export default function Profile() {
               },
               {
                 title: "Himersus",
-                period: "2023 - 2026 | Teach Lead & Software Developer",
-                desc: "Na Himersus, atuo como Teach Lead e Software Developer, lidero uma equipa de desenvolvedores de software qualificados ",
+                period: "2023 - 2026 | Tech Lead & Software Developer",
+                desc: "Na Himersus, atuo como Tech Lead e Software Developer, lidero uma equipa de desenvolvedores de software qualificados ",
               },
               {
                 title: "Bulir Technology",
