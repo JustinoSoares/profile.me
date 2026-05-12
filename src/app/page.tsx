@@ -206,7 +206,7 @@ export default function Profile() {
                 Justino Soares
               </h3>
               <p className="pt-1 text-slate-700 text-base">
-                Back-end Developer & AI Engineer | Front-end Development |
+                Back-end Developer | Front-end Development |
                 Mobile Development
               </p>
             </header>
@@ -236,7 +236,7 @@ export default function Profile() {
               delay={0.2}>
               {[
                 {
-                  value: "+3",
+                  value: "+5",
                   label: "Anos de Experiência",
                   desc: "Anos atuando tanto como freelancer quanto em empresas, acumulando visões diferentes de como software é construído e entregue.",
                 },
